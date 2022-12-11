@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Hero from "./Hero";
+import { useGlobalContext } from "../context";
 
 const About = () => {
-  return <div>About</div>;
+  const data = {
+    image: "./images/aboutimage.png",
+  };
+  const { updateAboutPage } = useGlobalContext();
+  useEffect(() => {
+    updateAboutPage();
+  }, []);
+  return <Hero {...data} />;
 };
 
 export default About;

@@ -1,30 +1,17 @@
-import React from "react";
-import Button from "./Button";
+import React, { useEffect } from "react";
+import { useGlobalContext } from "../context";
+import Hero from "./Hero";
 
 const Home = () => {
-  return (
-    <div className="home-parent">
-      <div className="home">
-        <p>WELCOME TO</p>
-        <h1>
-          CENTURY
-          <br /> SOFTWARE
-          <br />
-          SOLUTIONS
-        </h1>
-        <p>
-          We're a Software Solutions Company. We offer
-          <br /> Solutions in Web, Android and Native Domain.
-          <br />
-          Reputated Company since 1990's.
-        </p>
-        <Button />
-      </div>
-      <div className="heroimage">
-        <img src="./images/heroimage.jpg" alt="image" />
-      </div>
-    </div>
-  );
+  const data = {
+    image: "./images/homeimage.jpg",
+  };
+  const { updateHomePage } = useGlobalContext();
+  useEffect(() => {
+    updateHomePage();
+  }, []);
+
+  return <Hero {...data} />;
 };
 
 export default Home;
