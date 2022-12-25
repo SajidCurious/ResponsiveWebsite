@@ -6,6 +6,7 @@ import Contact from "./Components/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import Error from "./Components/Error";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
