@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../context";
 import Hero from "./Hero";
+import Services from "./Services";
+import Contact from "./Contact";
 
 const Home = () => {
   const data = {
@@ -11,7 +13,13 @@ const Home = () => {
     updateHomePage();
   }, []);
 
-  return <Hero {...data} />;
+  return (
+    <>
+      <Hero {...data} />
+      <Services />
+      <Contact />
+    </>
+  );
 };
 
 export default Home;

@@ -65,6 +65,22 @@ const Footer = () => {
           <h4>+91 9110553588</h4>
         </div>
       </footer>
+
+      {/* Bottom Section */}
+      <hr />
+      <div className="footer-bottom">
+        <div className="footer-bottom-data">
+          <p>
+            @{new Date().getFullYear()} Centuary Software Solutions. All Rights
+            Reserved
+          </p>
+        </div>
+        <div>
+          <p>PRIVACY POLICY</p>
+          <br />
+          <p>TERMS & CONDITIONS</p>
+        </div>
+      </div>
     </>
   );
 };

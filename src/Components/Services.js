@@ -41,9 +41,9 @@ const Services = () => {
     },
   ];
   return (
-    <>
-      <div className="serviceparent">
-        {/* <h2 className="serviceHeading">Our Services</h2> */}
+    <div className="serviceParent">
+      <h2 className="serviceHeading">Our Services</h2>
+      <div className="serviceParentData">
         {serviceData.map((data) => (
           <div className="card">
             <h3 className="serviceName">{data.name}</h3>
@@ -57,7 +57,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
