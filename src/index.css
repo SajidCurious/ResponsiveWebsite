@@ -72,6 +72,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 10vh 10vw 10vh 10vw;
+  /* background-color: #dfe6e9; */
 }
 .serviceParentData {
   display: flex;
@@ -259,4 +260,37 @@ textarea {
   flex-direction: row;
   padding: 5vh 5vw;
   gap: 10vw;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #2d3436;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+.goToTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goToTop i {
+  cursor: pointer;
+  font-size: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  background-color: #3c40c6;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
